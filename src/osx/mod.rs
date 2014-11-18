@@ -352,4 +352,8 @@ impl Window {
     pub fn platform_display(&self) -> *mut libc::c_void {
         unimplemented!()
     }
+
+    pub fn get_api(&self) -> ::Api {
+        ::Api::OpenGl
+    }
 }
